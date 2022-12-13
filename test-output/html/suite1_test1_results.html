@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Login Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Login Test</h1>
+<p>
+  Test duration: 29.781s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.herokuapp.testsuite.LoginPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  UserShouldLoginSuccessfullyWithValidCredentials
+      </td>
+  <td class="duration">
+    1.302s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sending text to Username : tomsmith<br />
+                                Sending text to Password Field : SuperSecretPassword!<br />
+                                clicking on login button : [[ChromeDriver: chrome on WINDOWS (db7ba40490577dd03628ed0caa4c3e5c)] -&gt; xpath: //i[contains(text(),&apos;Login&apos;)]]<br />
+                                Getting Message : [[ChromeDriver: chrome on WINDOWS (db7ba40490577dd03628ed0caa4c3e5c)] -&gt; xpath: //h2[normalize-space()=&apos;Secure Area&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThePasswordErrorMessage
+      </td>
+  <td class="duration">
+    1.258s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sending text to Username : tomsmith<br />
+                                Sending text to Password Field : SuperSectomsmithretPassword<br />
+                                clicking on login button : [[ChromeDriver: chrome on WINDOWS (7956cced5f81852ab804663c2ae176af)] -&gt; xpath: //i[contains(text(),&apos;Login&apos;)]]<br />
+                                Getting Error Message : [[ChromeDriver: chrome on WINDOWS (7956cced5f81852ab804663c2ae176af)] -&gt; xpath: //div[@class = &apos;flash error&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyTheUsernameErrorMessage
+      </td>
+  <td class="duration">
+    1.330s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sending text to Username : tomsmith1<br />
+                                Sending text to Password Field : SuperSecretPassword!<br />
+                                clicking on login button : [[ChromeDriver: chrome on WINDOWS (adb6f2f07318ea3319ed3590ced04a41)] -&gt; xpath: //i[contains(text(),&apos;Login&apos;)]]<br />
+                                Getting Error Message : [[ChromeDriver: chrome on WINDOWS (adb6f2f07318ea3319ed3590ced04a41)] -&gt; xpath: //div[@id=&apos;flash&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
